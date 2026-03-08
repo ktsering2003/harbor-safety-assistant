@@ -97,3 +97,100 @@ This report appears to involve an unsolicited investment offer promising unreali
 ### 4. The report is stored
 
 Reports are stored in a simple JSON database:
+
+This allows the system to maintain a history of incidents.
+
+---
+
+### 5. The report appears on the dashboard
+
+The report becomes visible on the dashboard where users can:
+
+- view reports  
+- search reports  
+- read incident analysis  
+- edit reports  
+
+---
+
+# Core Features
+
+Harbor currently supports:
+
+- Create new safety reports  
+- View all reports on a dashboard  
+- View detailed report analysis  
+- Edit existing reports  
+- Search reports by title, category, or location  
+- Incident classification  
+- AI-assisted analysis  
+- Rule-based fallback analysis  
+- Lightweight JSON storage  
+- Unit tests using pytest  
+
+---
+
+# Tech Stack
+
+- Python
+- Flask
+- HTML / CSS
+- JSON file storage
+- Pytest
+
+Optional AI integration via environment configuration.
+
+---
+
+# Project Structure
+
+---
+
+# Quick Start
+
+## Prerequisites
+
+- Python 3.10+
+- pip
+
+---
+
+## Setup
+
+Create a virtual environment:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+nstall dependencies:
+
+python3 -m pip install -r requirements.txt
+
+Run the application:
+
+python3 app.py
+
+Open the application in your browser:
+
+http://127.0.0.1:5000
+
+Running Tests
+
+Run unit tests using pytest:
+
+python3 -m pytest
+
+
+Future Improvements
+
+This prototype focuses on simplicity and clarity. Future improvements could include:
+
+database storage (PostgreSQL)
+
+incident trend detection
+
+automated severity scoring
+
+improved AI classification
+
+threat pattern analysis
