@@ -1,39 +1,104 @@
-<<<<<<< HEAD
 # Harbor
 
-Harbor is a lightweight community safety and digital wellness assistant built for the Palo Alto Networks New Grad SWE take-home case study.
+Harbor is a lightweight community safety and digital wellness assistant.
 
-The goal of Harbor is to turn scattered or noisy safety reports into clear, calm, and actionable guidance. A user can create, view, update, and search reports. Each report is analyzed using a simple classification flow, and the system is designed to support an AI-assisted path with a rule-based fallback when AI is unavailable or unreliable.
+It allows users to report suspicious or unsafe situations and receive simple, structured guidance about what the issue might be and what actions they can take.
 
-## Scenario Chosen
+The goal of Harbor is to turn scattered safety reports into **clear, understandable, and actionable information**.
+
+---
+
+# Scenario Chosen
 
 Intelligent Community Safety & Digital Wellness 🛡️
 
-## Why I Built This
+Harbor focuses on helping people recognize and understand common safety issues such as:
 
-One of the main problems in both community safety and cybersecurity is signal versus noise.
+• phishing emails  
+• scam phone calls  
+• fake investment messages  
+• suspicious public WiFi networks  
+• local community safety concerns  
 
-People often receive fragmented information about scams, suspicious activity, unsafe networks, or digital threats, but they do not always know what matters most or what to do next. I wanted to build something that takes a raw report and turns it into something more structured, understandable, and useful.
+---
 
-Harbor is a small prototype, but the pattern behind it is meaningful:
-- ingest a signal
-- classify it
-- summarize it
-- provide recommended next steps
-- keep a fallback path when AI is unavailable or incorrect
+# Why Harbor Exists
 
-That pattern is relevant to the broader security space, especially in environments where trust, speed, and clear action matter.
+In both community safety and cybersecurity, one of the biggest challenges is **signal vs noise**.
 
-## Core Features
+People frequently encounter suspicious messages, calls, or situations but often do not know:
 
-- Create a new safety report
-- View all reports
-- View report details
-- Update an existing report
-- Search reports by title, location, or category
-- Analyze reports with rule-based classification
-- Support AI-assisted analysis with a fallback path
-- Use synthetic dataset only
+• whether the situation is actually dangerous  
+• what type of threat it might be  
+• what actions they should take  
+
+Harbor takes a simple approach:
+
+1. collect a report  
+2. analyze the situation  
+3. summarize the risk  
+4. provide recommended next steps  
+
+The system also includes a fallback mechanism so it can still provide guidance even if AI analysis fails.
+
+---
+
+# Example User Flow
+
+### 1. A user reports a suspicious incident
+
+Example report:
+
+Title  
+Crypto Investment Message
+
+Description  
+"I received a message promising guaranteed crypto profits if I invest immediately."
+
+Location  
+Austin
+
+Severity  
+High
+
+---
+
+### 2. The system analyzes the report
+
+After the report is submitted, the system analyzes the description.
+
+The system attempts:
+
+AI-assisted analysis
+
+If AI is unavailable or fails, the system automatically uses a rule-based fallback classifier.
+
+This ensures the system always produces a result.
+
+---
+
+### 3. The system generates guidance
+
+Example result:
+
+Category  
+Investment Scam
+
+Summary  
+This report appears to involve an unsolicited investment offer promising unrealistic returns.
+
+Recommended Next Steps
+
+• Do not send money or personal details  
+• Verify the organization independently  
+• Report the account or message to the platform  
+
+---
+
+### 4. The report is stored
+
+Reports are stored in a simple JSON database:
+
 
 ## Tech Stack
 
@@ -43,6 +108,54 @@ That pattern is relevant to the broader security space, especially in environmen
 - JSON file storage
 - Pytest
 - OpenAI API support via `.env` (optional / fallback-safe)
+
+
+
+This allows the system to maintain a history of incidents.
+
+---
+
+### 5. The report appears on the dashboard
+
+The report becomes visible on the dashboard where users can:
+
+• view reports  
+• search reports  
+• read incident analysis  
+• edit reports  
+
+---
+
+# Core Features
+
+Harbor currently supports:
+
+• Create new safety reports  
+• View all reports on a dashboard  
+• View detailed report analysis  
+• Edit existing reports  
+• Search reports by title, category, or location  
+• Incident classification  
+• AI-assisted analysis  
+• Rule-based fallback analysis  
+• Lightweight JSON storage  
+• Unit tests with pytest  
+
+---
+
+# Tech Stack
+
+Python  
+Flask  
+HTML / CSS  
+JSON data storage  
+Pytest
+
+Optional AI integration via environment configuration.
+
+---
+
+# Project Structure
 
 ## Quick Start
 
