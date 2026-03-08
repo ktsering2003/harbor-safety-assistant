@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Harbor
 
 Harbor is a lightweight community safety and digital wellness assistant built for the Palo Alto Networks New Grad SWE take-home case study.
@@ -56,3 +57,25 @@ That pattern is relevant to the broader security space, especially in environmen
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+=======
+### Incident Severity
+
+Severity levels in Harbor are currently **user-defined**.
+
+When creating a report, users choose:
+
+- Low
+- Medium
+- High
+
+This allows the reporting user to express the perceived urgency of the situation.
+
+The AI-assisted classification system focuses on determining:
+
+- threat category
+- summary of the issue
+- recommended next steps
+
+Future improvements could allow the system to automatically suggest
+or adjust severity levels based on detected threat patterns.
+>>>>>>> e937cd9 (Complete Harbor Safety Assistant with AI classification and fallback system)

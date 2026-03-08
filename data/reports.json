@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Suspicious Bank Email",
+    "description": "Email pretending to be Chase bank asking for login credentials and warning that the account will be locked.",
+    "location": "New York",
+    "severity": "medium",
+    "category": "Phishing / Scam",
+    "summary": "This report appears to describe a phishing attempt aimed at collecting sensitive account information.",
+    "next_steps": [
+      "Do not click any links or attachments",
+      "Verify the sender through an official channel",
+      "Change your password and enable two-factor authentication if needed"
+    ],
+    "analysis_source": "fallback"
+  },
+  {
+    "id": 2,
+    "title": "Fake Tech Support Call",
+    "description": "Caller claimed to be Microsoft support and asked for remote access to fix a device issue.",
+    "location": "California",
+    "severity": "high",
+    "category": "Phone Scam",
+    "summary": "Users reported scam calls pretending to be technical support.",
+    "next_steps": [
+      "Hang up immediately",
+      "Do not grant remote access",
+      "Report the phone number"
+    ],
+    "analysis_source": "fallback"
+  },
+  {
+    "id": 3,
+    "title": "Public WiFi Security Concern",
+    "description": "Users noticed a suspicious open WiFi network in the apartment building lobby that looked similar to the building network.",
+    "location": "Hoboken",
+    "severity": "low",
+    "category": "Network Safety",
+    "summary": "Users noticed a suspicious open WiFi network that may be unsafe.",
+    "next_steps": [
+      "Avoid connecting to the unknown network",
+      "Use a trusted WiFi network or VPN",
+      "Review device security settings"
+    ],
+    "analysis_source": "fallback"
+  },
+  {
+    "id": 4,
+    "title": "Crypto Investment Message",
+    "description": "Telegram account promised guaranteed crypto profits and pushed users to deposit funds quickly.",
+    "location": "Austin",
+    "severity": "high",
+    "category": "Investment Scam",
+    "summary": "Users reported unsolicited messages promising unrealistic crypto investment returns.",
+    "next_steps": [
+      "Do not send money or personal details",
+      "Verify the organization independently",
+      "Report the account to the platform"
+    ],
+    "analysis_source": "fallback"
+  },
+  {
+    "id": 5,
+    "title": "Package Theft Alert",
+    "description": "Residents reported several missing packages and a suspicious individual near the mailroom entrance.",
+    "location": "Seattle",
+    "severity": "medium",
+    "category": "Physical Safety Concern",
+    "summary": "Residents reported repeated package theft concerns near a shared delivery area.",
+    "next_steps": [
+      "Stay alert near the delivery area",
+      "Document any useful details if safe",
+      "Notify building management or local authorities if needed"
+    ],
+    "analysis_source": "fallback"
+  },
+  {
+    "id": 6,
+    "title": "Account Verification Text Scam",
+    "description": "Text message claimed an email account would be suspended unless the user verified credentials through a link.",
+    "location": "Chicago",
+    "severity": "medium",
+    "category": "Phishing / Scam",
+    "summary": "Users reported text-based phishing attempts requesting account verification through suspicious links.",
+    "next_steps": [
+      "Do not open the link",
+      "Verify account status through the official website",
+      "Change credentials if you already interacted with the message"
+    ],
+    "analysis_source": "fallback"
+  },
+  {
+    "id": 7,
+    "title": "Shopping Site",
+    "description": "Do not open the link, Verify account status",
+    "location": "UNITED STATES",
+    "severity": "medium",
+    "category": "Phishing / Scam",
+    "summary": "This report appears to describe a phishing attempt aimed at collecting sensitive account information.",
+    "next_steps": [
+      "Do not click any links or attachments",
+      "Verify the sender through an official channel",
+      "Change your password and enable two-factor authentication if needed"
+    ],
+    "analysis_source": "fallback"
+  },
+  {
+    "id": 8,
+    "title": "Network",
+    "description": "Users reported text-based phishing attempts when visiting a site",
+    "location": "Remote",
+    "severity": "medium",
+    "category": "General Advisory",
+    "summary": "This report describes a safety concern, but the exact type is unclear. A general precautionary response is recommended.",
+    "next_steps": [
+      "Review the situation carefully before acting",
+      "Avoid sharing sensitive information until verified",
+      "Escalate the concern if additional evidence appears"
+    ],
+    "analysis_source": "fallback"
+  },
+  {
+    "id": 9,
+    "title": "Crypto Investment Message",
+    "description": "I received a message promising guaranteed crypto profits if I invest immediately.",
+    "location": "Austin",
+    "severity": "high",
+    "category": "Investment Scam",
+    "summary": "This report appears to involve an unsolicited or suspicious investment offer promising unrealistic returns.",
+    "next_steps": [
+      "Do not send money or personal details",
+      "Verify the organization independently",
+      "Report the account or message to the platform"
+    ],
+    "analysis_source": "fallback"
+  }
+]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Report Incident</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Report a Safety Incident</h1>
+
+<form method="POST">
+
+Title<br>
+<input name="title" required>
+<br><br>
+
+Description<br>
+<textarea name="description" required></textarea>
+<br><br>
+
+Location<br>
+<input name="location" required>
+<br><br>
+
+Severity<br>
+<select name="severity">
+<option value="low">low</option>
+<option value="medium">medium</option>
+<option value="high">high</option>
+</select>
+
+<br><br>
+
+<button class="btn">Submit Report</button>
+
+</form>
+
+<br>
+
+<a href="/">← Back</a>
+
+</div>
+
+</body>
+</html>

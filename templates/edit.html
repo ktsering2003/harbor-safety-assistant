@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Edit Report</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Edit Report</h1>
+
+<form method="POST">
+
+Title<br>
+<input name="title" value="{{report.title}}" required>
+<br><br>
+
+Description<br>
+<textarea name="description">{{report.description}}</textarea>
+<br><br>
+
+Location<br>
+<input name="location" value="{{report.location}}">
+<br><br>
+
+Severity<br>
+<select name="severity">
+
+<option value="low" {% if report.severity=='low' %}selected{% endif %}>low</option>
+<option value="medium" {% if report.severity=='medium' %}selected{% endif %}>medium</option>
+<option value="high" {% if report.severity=='high' %}selected{% endif %}>high</option>
+
+</select>
+
+<br><br>
+
+<button class="btn">Update Report</button>
+
+</form>
+
+<br>
+
+<a href="/report/{{report.id}}">Cancel</a>
+
+</div>
+
+</body>
+</html>

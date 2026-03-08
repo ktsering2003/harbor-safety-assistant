@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Harbor Safety Reports</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Harbor Safety Reports</h1>
+
+<div class="topbar">
+
+<a class="btn" href="/create">+ Report Incident</a>
+
+<form method="GET">
+<input class="search" name="q" placeholder="Search reports...">
+</form>
+
+</div>
+
+<div class="reports">
+
+{% for report in reports %}
+
+<div class="card">
+
+<h3>{{report.title}}</h3>
+
+<div class="meta">
+{{report.category}} • {{report.location}} • {{report.severity}}
+</div>
+
+<p>{{report.summary}}</p>
+
+<a href="/report/{{report.id}}">View Details</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</div>
+
+</body>
+</html>

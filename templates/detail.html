@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Report Details</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="/">← Back to Reports</a>
+
+<h1>{{report.title}}</h1>
+
+<div class="detail-box">
+
+<p class="meta">
+<b>Category:</b> {{report.category}} |
+<b>Location:</b> {{report.location}} |
+<b>Severity:</b> {{report.severity}}
+</p>
+
+<p>
+<b>Analysis Source:</b> {{report.analysis_source}}
+</p>
+
+<hr>
+
+<h3>Description</h3>
+
+<p>
+{{report.description}}
+</p>
+
+<h3>Summary</h3>
+
+<p>
+{{report.summary}}
+</p>
+
+<h3>Recommended Next Steps</h3>
+
+<ul>
+
+{% for step in report.next_steps %}
+
+<li>{{step}}</li>
+
+{% endfor %}
+
+</ul>
+
+<br>
+
+<a class="btn" href="/edit/{{report.id}}">Edit Report</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

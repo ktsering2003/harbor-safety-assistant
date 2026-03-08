@@ -1,0 +1,116 @@
+/* Harbor Safety Assistant UI Theme */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 40px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Header */
+
+h1 {
+    margin-top: 0;
+    color: #1a2b49;
+}
+
+/* Top bar */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+
+.btn {
+    background: #2563eb;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* Search */
+
+.search {
+    padding: 8px;
+    width: 220px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Report grid */
+
+.reports {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 20px;
+}
+
+/* Cards */
+
+.card {
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.meta {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Links */
+
+a {
+    color: #2563eb;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 4px;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* Detail page */
+
+.detail-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
