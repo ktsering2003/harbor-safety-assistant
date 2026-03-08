@@ -138,31 +138,39 @@ Harbor currently supports:
 - JSON file storage
 - Pytest
 
-Optional AI integration via environment configuration.
+📝 Case Study Summary
 
----
+Candidate Name:
+Kunsang Tsering
 
-# Project Structure
+Scenario Chosen:
+Intelligent Community Safety & Digital Wellness 🛡️
 
----
+Estimated Time Spent:
+Approximately 5 hours
 
-# Quick Start
+🚀 Quick Start
+● Prerequisites
 
-## Prerequisites
+Python 3.10+
 
-- Python 3.10+
-- pip
+pip
 
----
+Git
 
-## Setup
+● Run Commands
+
+Clone the repository:
+
+git clone https://github.com/ktsering2003/harbor-safety-assistant.git
+cd harbor-safety-assistant
 
 Create a virtual environment:
 
-```bash
 python3 -m venv venv
 source venv/bin/activate
-nstall dependencies:
+
+Install dependencies:
 
 python3 -m pip install -r requirements.txt
 
@@ -170,27 +178,69 @@ Run the application:
 
 python3 app.py
 
-Open the application in your browser:
+Open the app in your browser:
 
 http://127.0.0.1:5000
+● Test Commands
 
-Running Tests
-
-Run unit tests using pytest:
+Run the unit tests:
 
 python3 -m pytest
+🤖 AI Disclosure
 
+Did you use an AI assistant (Copilot, ChatGPT, etc.)?
+Yes.
 
-Future Improvements
+How did you verify the suggestions?
 
-This prototype focuses on simplicity and clarity. Future improvements could include:
+All suggestions were reviewed manually before being used. I tested each change locally, confirmed that the application behavior remained correct, and ensured the logic aligned with the intended functionality of the project.
 
-database storage (PostgreSQL)
+I also ran the unit tests and manually tested the main user flow (creating reports, viewing reports, and editing reports) to confirm that the system behaved as expected.
 
-incident trend detection
+Example of a suggestion I rejected or modified
 
-automated severity scoring
+One suggestion proposed relying entirely on AI-based classification for report analysis. I chose to modify this approach and implement a rule-based fallback classifier so the system would still function reliably even if AI analysis fails or is unavailable.
 
-improved AI classification
+⚖️ Tradeoffs & Prioritization
 
-threat pattern analysis
+What did you cut to stay within the 4–6 hour limit?
+
+To keep the project within the time limit, I intentionally avoided adding:
+
+database infrastructure (e.g., PostgreSQL)
+
+authentication or user accounts
+
+deployment configuration
+
+advanced analytics or incident trend detection
+
+Instead, I focused on delivering a clean end-to-end flow that demonstrates the core concept: collecting a report, analyzing it, generating guidance, and displaying it in a simple UI.
+
+What would you build next if you had more time?
+
+If I extended the project further, I would add:
+
+database-backed storage instead of JSON
+
+automatic severity scoring based on threat patterns
+
+incident trend detection and visual dashboards
+
+stronger AI classification and prompt tuning
+
+threat pattern clustering across reports
+
+These additions would help the system better identify patterns across incidents and provide deeper insights.
+
+Known limitations
+
+JSON storage is not designed for large-scale data
+
+incident classification is intentionally simple
+
+severity levels are currently user-defined
+
+AI classification is optional and not deeply tuned
+
+The current version focuses on demonstrating the core reporting and analysis workflow rather than production-scale infrastructure.
